@@ -1,0 +1,40 @@
+{
+  "name": "@lagdotcom/simple-inputs",
+  "version": "0.1.0",
+  "description": "Simple input handling library.",
+  "main": "src/demo.ts",
+  "scripts": {
+    "build": "rollup -c",
+    "start": "rollup -cw",
+    "watch": "rollup -cw",
+    "lint": "eslint --fix src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lag.Com <lagdotcom@gmail.com>",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "eslint": "^7.21.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-array-func": "^3.1.7",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-woke": "^1.0.0",
+    "prettier": "^2.2.1",
+    "rollup": "^2.40.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lagdotcom/simple-inputs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lagdotcom/simple-inputs/issues"
+  },
+  "homepage": "https://github.com/lagdotcom/simple-inputs#readme"
+}
