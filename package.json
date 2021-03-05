@@ -1,9 +1,9 @@
 {
   "name": "@lagdotcom/simple-inputs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple input handling library.",
   "main": "dist/demo.js",
-  "types": "dist/*.d.ts",
+  "types": "dist/index.d.ts",
   "scripts": {
     "prettier": "prettier -w src",
     "lint": "eslint --fix src",
