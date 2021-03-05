@@ -30,7 +30,7 @@ interface GamepadInputHandlerArgs {
 // TODO: repeat presses
 export default class GamepadInputHandler<T> {
   private activePads: number;
-  private interval: ReturnType<typeof window.setInterval>;
+  private interval?: ReturnType<typeof setInterval>;
   private running: boolean;
   private statuses: Record<number, PadStatus>;
 
@@ -69,6 +69,7 @@ export default class GamepadInputHandler<T> {
     this.events = events;
     this.resolution = resolution;
     this.threshold = threshold;
+    this.running = false;
     this.enabled = enabled;
   }
 
@@ -91,7 +92,7 @@ export default class GamepadInputHandler<T> {
   }
 
   private stop() {
-    clearInterval(this.interval);
+    if (this.interval) clearInterval(this.interval);
   }
 
   private tick() {

@@ -1,20 +1,11 @@
-import commonjs from "@rollup/plugin-commonjs";
-import pkg from "./package.json";
-import resolve from "@rollup/plugin-node-resolve";
-import sourcemaps from "rollup-plugin-sourcemaps";
-import typescript from "rollup-plugin-typescript2";
+import commonjs from '@rollup/plugin-commonjs';
 
 export default {
-  input: pkg.main,
+  input: ['dist/demo.js'],
   output: {
-    sourcemap: true,
-    file: "dist/bundle.js",
-    format: "iife",
+    name: 'lagdotcomSimpleInputs',
+    file: 'demo/bundle.js',
+    format: 'iife',
   },
-  plugins: [
-    sourcemaps(),
-    commonjs(),
-    resolve(),
-    typescript({ tsconfigDefaults: { sourceMap: true } }),
-  ],
+  plugins: [commonjs()],
 };
